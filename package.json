@@ -1,0 +1,25 @@
+{
+  "name": "typescript-handbook",
+  "version": "1.0.0",
+  "description": "Repository for study of Typescript and my english",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniormartinxo/typescript-handbook.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Junior Martins <amjr.box@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juniormartinxo/typescript-handbook/issues"
+  },
+  "homepage": "https://github.com/juniormartinxo/typescript-handbook#readme",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
