@@ -6,4 +6,7 @@
 <img src="https://img.shields.io/badge/yarn-1.22.10-2C8EBB?style=?style=flat-square&logo=appveyor&logo=Yarn"/>
 </p>
 
-## What is needed?
+## What is needed? (O que é necessário?)
+- [VSCode] (https://code.visualstudio.com/);
+- [NodeJS] (https://nodejs.org/);
+- 
