@@ -7,6 +7,6 @@
 </p>
 
 ## What is needed? (O que é necessário?)
-- [VSCode] (https://code.visualstudio.com/);
-- [NodeJS] (https://nodejs.org/);
-- 
+- [VSCode](https://code.visualstudio.com/);
+- [NodeJS](https://nodejs.org/);
+- [TypeScript](https://www.typescriptlang.org/)
