@@ -19,7 +19,9 @@
     "url": "https://github.com/juniormartinxo/typescript-handbook/issues"
   },
   "homepage": "https://github.com/juniormartinxo/typescript-handbook#readme",
-  "dependencies": {
-    "typescript": "^4.3.5"
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "eslint": "^7.32.0"
   }
 }
