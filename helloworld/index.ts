@@ -1,6 +1,6 @@
 // How it's done in Javascript
 /**
- * let message = "Hello World";
+ * let message_1 = "Hello World";
  */
 
 // How it's done in Typescript
@@ -19,6 +19,7 @@ if (typeof message_1 === 'string') {
 
 console.log('-------------x-------------');
 
+/*
 // Error: incorrect type
 let message_2: string = 43110;
 
@@ -32,3 +33,4 @@ if (typeof message_2 === 'string') {
 } else {
   console.log('message_2 is not a string, message2 is a ' + typeof message_2);
 }
+*/
