@@ -7,7 +7,7 @@
  */
 
 // How it's done in Typescript
-let simpleNumber = 15897;
+let simpleNumber: number = 15897;
 console.log('Number: ' + simpleNumber);
 // return: number
 console.log(typeof simpleNumber);
