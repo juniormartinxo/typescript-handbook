@@ -7,63 +7,63 @@
  */
 
 // How it's done in Typescript
-let simpleNumberBigint = 15897987654321987654321000000000n;
+let simpleNumberBigint: bigint = 15897987654321987654321000000000n;
 console.log('Number: ' + simpleNumberBigint);
 // return: number
 console.log(typeof simpleNumberBigint);
 
-if (typeof simpleNumberBigint === 'number') {
-  console.log('simpleNumberBigint is a number');
+if (typeof simpleNumberBigint === 'bigint') {
+  console.log('simpleNumberBigint is a bigint');
 } else {
   console.log(
-    'simpleNumberBigint is not a number, simpleNumberBigint is a ' + typeof simpleNumberBigint
+    'simpleNumberBigint is not a bigint, simpleNumberBigint is a ' + typeof simpleNumberBigint
   );
 }
 
 console.log('-------------x-------------');
 
-let hexadecimalNumberBigint = 0x3e19987654321987654321000000000n;
-console.log('HexadecimalBigint number: ' + hexadecimalNumberBigint);
+let hexadecimalNumberBigint: bigint = 0x3e19987654321987654321000000000n;
+console.log('Hexadecimal bigint: ' + hexadecimalNumberBigint);
 // return: number
 console.log(typeof hexadecimalNumberBigint);
 
-if (typeof hexadecimalNumberBigint === 'number') {
-  console.log('hexadecimalNumberBigint is a number');
+if (typeof hexadecimalNumberBigint === 'bigint') {
+  console.log('hexadecimalNumberBigint is a bigint');
 } else {
   console.log(
-    'hexadecimalNumberBigint is not a number, hexadecimalNumberBigint is a ' +
+    'hexadecimalNumberBigint is not a bigint, hexadecimalNumberBigint is a ' +
       typeof hexadecimalNumberBigint
   );
 }
 
 console.log('-------------x-------------');
 
-let octalNumberBigint = 0o37031987654321987654321000000000n;
-console.log('OctalNumberBigint number: ' + octalNumberBigint);
+let octalNumberBigint: bigint = 0o37031987654321987654321000000000n;
+console.log('OctalNumberBigint bigint: ' + octalNumberBigint);
 // return: number
 console.log(typeof octalNumberBigint);
 
-if (typeof octalNumberBigint === 'number') {
-  console.log('octalNumberBigint is a number');
+if (typeof octalNumberBigint === 'bigint') {
+  console.log('octalNumberBigint is a bigint');
 } else {
   console.log(
-    'octalNumberBigint is not a number, octalNumberBigint is a ' + typeof octalNumberBigint
+    'octalNumberBigint is not a bigint, octalNumberBigint is a ' + typeof octalNumberBigint
   );
 }
 
 console.log('-------------x-------------');
 
-let binaryNumberBigint = 0b11111000011001987654321987654321000000000n;
-console.log('binaryNumberBigint number: ' + binaryNumberBigint);
+let binaryNumberBigint: bigint = 0b11111000011001987654321987654321000000000n;
+console.log('binaryNumberBigint bigint: ' + binaryNumberBigint);
 // return: number
 console.log(typeof binaryNumberBigint);
 
-if (typeof octalNumber === 'number') {
-  console.log('binaryNumber is a number');
+if (typeof binaryNumberBigint === 'bigint') {
+  console.log('binaryNumberBigint is a bigint');
 } else {
   console.log(
-    'binaryNumber is not a number, binaryNumber is a ' +
-      typeof hexadecimalNumber
+    'binaryNumberBigint is not a bigint, binaryNumber is a ' +
+      typeof binaryNumberBigint
   );
 }
 
