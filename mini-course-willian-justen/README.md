@@ -6,14 +6,14 @@
 <ul>
 <li>
     Criar o arquivo .tsconfig, para isso rode o comando no terminal: <br>
-    ```
+    <code>
             tsc --init
-    ```
+    </code>
 </li>
 <li>
     Alterar o valor de "outDir" no arquivo .tsconfig para "./build", ficando: <br>
-    ```
+    <code>
         "outDir": "./build"
-    ```
+    </code>
 </li>
 </ul>
