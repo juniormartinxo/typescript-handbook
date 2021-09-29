@@ -1,7 +1,13 @@
+"use strict";
 // @Component
 // @Selector
 // @useState('ops')
-
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 // Factory
 /*
 function logger(prefix: string) {
@@ -12,7 +18,6 @@ function logger(prefix: string) {
 @logger('awesome')
 class Foo {}
 */
-
 /*
 function setAPIVersion(apiVersion: string) {
   return constructor => {
@@ -28,7 +33,6 @@ class API {}
 
 console.log(new API())
 */
-
 /*
 // Property decorator
 function minLength(length: number) {
@@ -65,36 +69,29 @@ const movie = new Movie('Avengers')
 
 console.log(movie.title)
 */
-
 // Method decorator
-
-function delay(ms: number) {
-  return (target: any, key: string, descriptor: PropertyDescriptor) => {
-    const original = descriptor.value
-
-    descriptor.value = function (...args: any[]) {
-      setTimeout(() => {
-        original.apply(this, args)
-      }, ms)
-
-      return descriptor
-    }
-  }
+function delay(ms) {
+    return (target, key, descriptor) => {
+        const original = descriptor.value;
+        descriptor.value = function (...args) {
+            setTimeout(() => {
+                original.apply(this, args);
+            }, ms);
+            return descriptor;
+        };
+    };
 }
-
 class Greeter {
-  greeting: string
-
-  constructor(message: string) {
-    this.greeting = message
-  }
-
-  // espera um tempo e aí vai rodar o método
-  @delay(1000)
-  greet() {
-    console.log(`Hello ${this.greeting}`)
-  }
+    constructor(message) {
+        this.greeting = message;
+    }
+    // espera um tempo e aí vai rodar o método
+    greet() {
+        console.log(`Hello ${this.greeting}`);
+    }
 }
-
-const greeter = new Greeter('Galera')
-greeter.greet()
+__decorate([
+    delay(1000)
+], Greeter.prototype, "greet", null);
+const greeter = new Greeter('Galera');
+greeter.greet();
